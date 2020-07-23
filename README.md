@@ -78,8 +78,10 @@ heroku open
 ```
 
 
-<img src="https://raw.githubusercontent.com/reach2arunprakash/master/src/server/public/images/FinalHostedImage.png" align="right">
+<img src="https://github.com/reach2arunprakash/system-design-primer/blob/master/FinalHostedImage.png" align="right">
 
+  
+ 
 
 10 . For debugging if something went wrong:
 ```bash
