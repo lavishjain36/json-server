@@ -78,7 +78,7 @@ heroku open
 ```
 
 
-<img src="https://github.com/reach2arunprakash/system-design-primer/blob/master/FinalHostedImage.png" align="right">
+<img src="https://github.com/reach2arunprakash/json-server-heroku/blob/master/FinalHostedImage.png" align="right">
 
   
  
