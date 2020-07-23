@@ -6,11 +6,31 @@
 
 * [**Create your database**](#create-your-database)
 * [Deploy to **Heroku**](#deploy-to-heroku)
-* [Deploy to **now**](#deploy-to-now)
-* [Deploy to **Azure**](#deploy-to-azure)
 
+## Create your Codebase and Data
 
-## Create your database
+---
+
+## Deploy to **Heroku**
+
+<img align="right" width="100px" height="auto" src="https://cdn.worldvectorlogo.com/logos/heroku.svg" alt="Heroku">
+
+Heroku is a free hosting service for hosting small projects. Easy setup and deploy from the command line via _git_.
+
+###### Pros
+
+* Easy setup
+* Free
+
+###### Cons
+
+* App has to sleep a couple of hours every day.
+* "Powers down" after 30 mins of inactivity. Starts back up when you visit the site but it takes a few extra seconds. Can maybe be solved with [**Kaffeine**](http://kaffeine.herokuapp.com/)
+
+---
+
+### Install Heroku ( stay in the same folder where you did git clone )
+
 
 1 . Clone this repo to anywhere on your computer.
 
@@ -33,55 +53,35 @@ _this example will create `/posts` route , each resource will have `id`, `title`
 }
 ```
 
----
+4 . Create an account on <br/>[https://heroku.com](https://heroku.com)
 
-## Deploy to **Heroku**
+5 . Install the Heroku CLI on your computer: <br/>[https://devcenter.heroku.com/articles/heroku-cli](https://devcenter.heroku.com/articles/heroku-cli)
 
-<img align="right" width="100px" height="auto" src="https://cdn.worldvectorlogo.com/logos/heroku.svg" alt="Heroku">
-
-Heroku is a free hosting service for hosting small projects. Easy setup and deploy from the command line via _git_.
-
-###### Pros
-
-* Easy setup
-* Free
-
-###### Cons
-
-* App has to sleep a couple of hours every day.
-* "Powers down" after 30 mins of inactivity. Starts back up when you visit the site but it takes a few extra seconds. Can maybe be solved with [**Kaffeine**](http://kaffeine.herokuapp.com/)
-
----
-
-### Install Heroku
-
-1 . [Create your database](#create-your-database)
-
-2 . Create an account on <br/>[https://heroku.com](https://heroku.com)
-
-3 . Install the Heroku CLI on your computer: <br/>[https://devcenter.heroku.com/articles/heroku-cli](https://devcenter.heroku.com/articles/heroku-cli)
-
-4 . Connect the Heroku CLI to your account by writing the following command in your terminal and follow the instructions on the command line:
+6 . Connect the Heroku CLI to your account by writing the following command in your terminal and follow the instructions on the command line:
 ```bash
 heroku login
 ```
 
-5 . Then create a remote heroku project, kinda like creating a git repository on GitHub. This will create a project on Heroku with a random name. If you want to name your app you have to supply your own name like `heroku create project-name`:
+7 . Then create a remote heroku project, kinda like creating a git repository on GitHub. This will create a project on Heroku with a random name. If you want to name your app you have to supply your own name like `heroku create project-name`:
 ```bash
-heroku create my-cool-project
+heroku create my-cool-jsonserver
 ```
 
-6 . Push your app to __Heroku__ (you will see a wall of code)
+8 . Push your app to __Heroku__ (you will see a wall of code). Do this from your folder where you did git clone of this repo
 ```bash
 git push heroku master
 ```
 
-7 . Visit your newly create app by opening it via heroku:
+9 . Visit your newly create app by opening it via heroku:
 ```bash
 heroku open
 ```
 
-8 . For debugging if something went wrong:
+
+<img src="https://raw.githubusercontent.com/reach2arunprakash/master/src/server/public/images/FinalHostedImage.png" align="right">
+
+
+10 . For debugging if something went wrong:
 ```bash
 heroku logs --tail
 ```
