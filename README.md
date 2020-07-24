@@ -66,13 +66,16 @@ heroku login
 ```bash
 heroku create my-cool-jsonserver
 ```
-
-8 . Push your app to __Heroku__ (you will see a wall of code). Do this from your folder where you did git clone of this repo
+8 . To add remote repo to heroku 
+```bash
+git remote -v
+```
+9 . Push your app to __Heroku__ (you will see a wall of code). Do this from your folder where you did git clone of this repo
 ```bash
 git push heroku master
 ```
 
-9 . Visit your newly create app by opening it via heroku:
+10 . Visit your newly create app by opening it via heroku:
 ```bash
 heroku open
 ```
@@ -83,7 +86,7 @@ heroku open
   
  
 
-10 . For debugging if something went wrong:
+11 . For debugging if something went wrong:
 ```bash
 heroku logs --tail
 ```
