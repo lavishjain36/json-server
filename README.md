@@ -64,10 +64,12 @@ heroku login
 
 7 . Then create a remote heroku project, kinda like creating a git repository on GitHub. This will create a project on Heroku with a random name. If you want to name your app you have to supply your own name like `heroku create project-name`:
 ```bash
-heroku create my-cool-jsonserver
+heroku create <my-cool-jsonserver>
 ```
 8 . To add remote repo to heroku 
 ```bash
+heroku git:remote -a <my-cool-jsonserver>
+
 git remote -v
 ```
 9 . Push your app to __Heroku__ (you will see a wall of code). Do this from your folder where you did git clone of this repo
