@@ -62,7 +62,7 @@ _this example will create `/posts` route , each resource will have `id`, `title`
 heroku login
 ```
 
-7 . Then create a remote heroku project, kinda like creating a git repository on GitHub. This will create a project on Heroku with a random name. If you want to name your app you have to supply your own name like `heroku create project-name`:
+7 . Then create a remote heroku project, kinda like creating a git repository on GitHub. This will create a project on Heroku with a random name. If you want to name your app you have to supply your own name like `heroku create project-name`: replace <my-cool-jsonserver> with your own name eg: arun-cool-jsonserver
 ```bash
 heroku create <my-cool-jsonserver>
 ```
